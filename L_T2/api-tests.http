@@ -1,0 +1,133 @@
+# СТАНЦІЇ
+
+### 1. Створення станції (Київ)
+POST http://localhost:5000/stations
+Content-Type: application/json
+
+{
+  "name": "Київ Теремки",
+  "city": "Київ",
+  "coordinates": { "lat": 40.50 , "lon": 30.52 },
+  "contact": { "email": "kyiv@eco.ua", "phone": "+380501234567" },
+  "measurements": ["pm2.5", "temperature"]
+}
+
+
+### 1b. Створення станції 
+POST http://localhost:5000/stations
+Content-Type: application/json
+
+{
+  "name": "Київ Оболонь",
+  "city": "Київ",
+  "coordinates": { "lat": 50.51, "lon": 30.49 },
+  "contact": { "email": "Kyiv_ob@eco.ua", "phone": "+380671234567" },
+  "measurements": ["co2", "humidity"]
+}
+
+### 1.с Створення станції 
+POST http://localhost:5000/stations
+Content-Type: application/json
+
+{
+  "name": "Київська ГЕС",
+  "city": "Вишгород",
+  "coordinates": { "lat": 50.58 , "lon": 30.51 },
+  "contact": { "email": "kyiv_HPP@eco.ua", "phone": "+380501234567" },
+  "measurements": ["pm2.5", "temperature"]
+}
+
+
+### 2. Отримання всіх станцій
+GET http://localhost:5000/stations
+
+
+### 3. Отримання станції за ID
+GET http://localhost:5000/stations/
+
+
+### 4. Оновлення станції
+PUT http://localhost:5000/stations/
+Content-Type: application/json
+
+{
+  "city": "Lviv",
+  "contact": { "email": "contact@eco.ua" }
+}
+
+### 5. Видалення станції
+DELETE http://localhost:5000/stations/
+
+
+### 6. Видалення всіх станцій
+DELETE http://localhost:5000/stations
+
+# AIR QUALITY
+
+### 1. Створення запису якості повітря
+POST http://localhost:5000/airquality/6901d70974bd63cc82bf4a45
+Content-Type: application/json
+
+{
+  "pm25": 25,
+  "pm10": 30,
+  "co2": 410,
+   "o3": 120,
+  "no2": 80,
+  "temperature": 22,
+  "humidity": 45
+}
+
+### 1.b Створення запису якості повітря
+POST http://localhost:5000/airquality/6901d82974bd63cc82bf4a51
+Content-Type: application/json
+
+{
+  "pm25": 10,
+  "pm10": 20,
+  "co2": 520,
+   "o3": 330,
+  "no2": 50,
+  "temperature": 25,
+  "humidity": 42
+}
+
+### 1.с Створення запису якості повітря
+POST http://localhost:5000/airquality/6901935da6a06c892e8574bc
+Content-Type: application/json
+
+{
+  "pm25": 15,
+  "pm10": 18,
+  "co2": 208,
+   "o3": 130,
+  "no2": 30,
+  "temperature": 26,
+  "humidity": 39
+}
+
+
+### 2. Отримання всіх записів якості повітря
+GET http://localhost:5000/airquality/
+
+
+### 3. Отримання запису якості повітря за ID
+GET http://localhost:5000/airquality/68ff72c940d569f238c77813
+
+
+### 4. Оновлення запису якості повітря
+PUT http://localhost:5000/airquality/
+Content-Type: application/json
+
+{
+  "pm25": 50,
+  "co2": 460
+}
+
+
+### 5. Видалення запису якості повітря
+DELETE http://localhost:5000/airquality/
+
+
+### 6. Видалення всіх записів якості повітря
+DELETE http://localhost:5000/airquality
