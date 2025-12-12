@@ -14,20 +14,24 @@ API дозволяє:
 перевіряти дані на коректність перед збереженням.
 
 ## 📁 Структура проєкту
+
 project/
- ├── models/
- │   ├── airQuality.js
- │   └── station.js
- ├── routes/
- │   ├── airQualityRoutes.js
- │   └── stationRoutes.js
- ├── validations/
- │   ├── airQualityValidation.js
- │   └── stationValidation.js
- ├── app.js
- ├── Database.js
- ├── api-tests.http
- └── package.json
+├── models/
+│ ├── airQuality.js
+│ └── station.js
+├── routes/
+│ ├── airQualityRoutes.js
+│ └── stationRoutes.js
+├── validations/
+│ ├── airQualityValidation.js
+│ └── stationValidation.js
+├── app.js
+├── Database.js
+├── api-tests.http
+└── package.json
+
+yaml
+Копіювати код
 
 🚀 Технології
 
@@ -170,5 +174,6 @@ Postman (можна імпортувати вручну)
 Joi гарантує, що хоча б одне поле передано на оновлення.
 
 Повна обробка помилок (try/catch, статуси).
+
 
 
