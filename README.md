@@ -15,22 +15,19 @@ API дозволяє:
 
 📁 Структура проєкту
 project/
-│── models/
-│   ├── airQuality.js
-│   └── station.js
-│
-│── routes/
-│   ├── airQualityRoutes.js
-│   └── stationRoutes.js
-│
-│── validations/
-│   ├── airQualityValidation.js
-│   └── stationValidation.js
-│
-│── app.js
-│── Database.js
-│── api-tests.http
-│── package.json
+├── models/
+│ ├── airQuality.js
+│ └── station.js
+├── routes/
+│ ├── airQualityRoutes.js
+│ └── stationRoutes.js
+├── validations/
+│ ├── airQualityValidation.js
+│ └── stationValidation.js
+├── app.js
+├── Database.js
+├── api-tests.http
+└── package.js
 
 🚀 Технології
 
@@ -185,4 +182,5 @@ api-tests.http
 Перед оновленням Joi гарантує, що хоча б одне поле передане.
 
 Повна обробка помилок (try/catch, коди статусів).
+
 
